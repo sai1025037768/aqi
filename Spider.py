@@ -128,7 +128,7 @@ if __name__ == '__main__':
     ]
 
     proxy_host = random.choice(PROXY_HOSTS)
-    proxy_support = urllib.request.ProxyHandler({'http': "192.168.1.7:81"})
+    proxy_support = urllib.request.ProxyHandler({'http': "124.193.201.66:81"})
     opener = urllib.request.build_opener(proxy_support)
     urllib.request.install_opener(opener)
 
