@@ -22,3 +22,4 @@ time_point = conf.get('update_time', 'time_point')
 
 def set(time_point):
     conf.set('update_time', 'time_point', time_point)
+    conf.write(open("config.ini", "w"))
